@@ -3,6 +3,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
 
+## To-do
+
+- [ ] See why workflow isn't working when there are databases included and fix it
+- [ ] Change the script filter python keyword.
+- [ ] Remove my API from the workflow
+- [ ] Change script filter keyword to `ns`
+
 ## 🤔 What is it?
 
 - This Alfred workflow allows you to search for pages in your Notion workspace.
