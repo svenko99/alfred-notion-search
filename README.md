@@ -21,7 +21,8 @@
 
 - In Alfred type `ns` and the page that you are searching for e.i. `ns programming` or `ns life`.
 - If you hit enter on the outputed page it will open either in browser or in Notion app.
+  ![screenshot](images/screenshot.png)
 
 ## To-do
 
-- [ ] Convert emoji or a custom made icon of a page to image so it can be used as an icon (now they are in title)
+- [ ] Convert emoji or a custom made icon of a page to image so it can be used as an icon (now they are in title).
