@@ -58,11 +58,7 @@ def create_item(result: dict) -> dict:
 
 
 def parse_notion_data(data: dict) -> dict:
-    items = [
-        create_item(result)
-        for result in data
-        if result["object"] in ["page", "database"]
-    ]
+    items = [create_item(result) for result in data]
     return dumps({"items": items})
 
 
