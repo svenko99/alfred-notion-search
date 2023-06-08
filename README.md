@@ -11,7 +11,7 @@
 
 ## Installation
 
-1. Install [⤓ Notion Search Workflow](https://github.com/svenko99/alfred-notion/releases/download/v1.1.0/notion_search.alfredworkflow) in the repo. You will be asked to put `Notion API key (of the integration)`. Follow steps in `2.` to get the API key.
+1. Install [⤓ Notion Search Workflow](https://github.com/svenko99/alfred-notion/releases/download/v1.2.0/notion_search.alfredworkflow) in the repo. You will be asked to put `Notion API key (of the integration)`. Follow steps in `2.` to get the API key.
 
 2. Follow this [instructions](https://www.notion.so/help/create-integrations-with-the-notion-api#create-an-internal-integration) to create an internal integration and put the `Internal Integration Token` into the `Notion API key (of the integration)` which you will find in the `Configure Workflow`. There you will also find a checkbox if you wish that links of the pages are opened in the browser or in the Notion app.
   
