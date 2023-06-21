@@ -1,7 +1,6 @@
 # <img src="images/notionxalfred.png" width="64"> Notion Search Workflow for Alfred
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
 
 ## 🤔 What is it?
 
