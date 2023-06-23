@@ -27,6 +27,6 @@ Select `Add Connection` and choose the integration you just created. *(You don't
 
 ## To-do
 
-- [ ] Convert emoji or a custom made icon of a page to image so it can be used as an icon (now they are in title).
+- [X] Convert emoji or a custom made icon of a page to image so it can be used as an icon (now they are in title).
 - [ ] Add offline version, so the workflow will be even faster. The workflow will store the data of all pages to JSON file.
   - [ ] Add update functionally to offline version (JSON file will be updated with latest pages of your Notion workspace whenever you wish).
