@@ -23,6 +23,7 @@
 
 - In Alfred type `ns` and the page that you are searching for e.i. `ns programming` or `ns life`.
 - If you hit enter on the outputed page it will open either in browser or in Notion app.
+  
   ![screenshot](images/screenshot1.png)
 
 ## To-do
