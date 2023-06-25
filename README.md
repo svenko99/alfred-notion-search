@@ -14,10 +14,10 @@
 
 2. Follow this [instructions](https://www.notion.so/help/create-integrations-with-the-notion-api#create-an-internal-integration) to create an internal integration and put the `Internal Integration Token` into the `Notion API key (of the integration)` which you will find in the `Configure Workflow` in Alfred app. There you will also find a checkbox if you wish that links of the pages are opened in the browser or in the Notion app.
 
-3. Then open the Notion page that you want to be searchable and click on the three dots in the upper right corner.  
-   Select `Add Connection` and choose the integration you just created. _(You don't have to do this for every page as the pages within the page inherit the connection, so do this just for the main pages that appear on the left side of Notion.)_
+3. Then open the Notion page that you want to be searchable and click on the three dots in the upper right corner. Select   
+`Add Connection` and choose the integration you just created. _(You don't have to do this for every page as the pages within the page inherit the connection, so do this just for the main pages that appear on the left side of Notion.)_
 
-4. You are good to go. 😃
+5. You are good to go. 😃
 
 ## Usage
 
