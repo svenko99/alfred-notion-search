@@ -28,6 +28,6 @@
 
 ## To-do
 
-- [x] Convert emoji or a custom made icon of a page to image so it can be used as an icon (now they are in title).
+- [x] Convert emoji to image so it can be used as an icon.
 - [ ] Add offline version, so the workflow will be even faster. The workflow will store the data of all pages to JSON file.
   - [ ] Add update functionally to offline version (JSON file will be updated with latest pages of your Notion workspace whenever you wish).
