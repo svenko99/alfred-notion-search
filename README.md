@@ -4,11 +4,18 @@
 
 ## 🤔 What is it?
 
-- This Alfred workflow allows you to search for pages in your Notion workspace.
+- This workflow enables you to perform online and offline searches of your Notion pages.
 - It requires a Notion integration (API key).
-- The workflow it quite fast.
 
-## Installation
+## 🌟 Features
+
+- **Online Search**: Search your Notion pages online for the most up-to-date information.
+- **Offline Search**: Search through a locally stored copy of your pages for quick access.
+- **Data Update**: Update your local data at your convenience to ensure accurate offline searches of your pages.
+
+## 🚀 Getting Started
+
+### Installation
 
 1. Install [⤓ Notion Search Workflow](https://github.com/svenko99/alfred-notion/releases/latest/download/Notion_search.alfredworkflow) in the repo. Double click on it and Alfred app should open with installation of the workflow. You will be prompted to put `Notion API key (of the integration)`. Follow steps in `2.` to get the API key.
 
@@ -21,13 +28,10 @@
 
 ## Usage
 
-- In Alfred type `ns` and the page that you are searching for e.i. `ns programming` or `ns life`.
+- **Online Search**: Type `n` followed by your search query to search your Notion pages online.
+- **Offline Search**: Type `ns` followed by your search query to search your Notion pages offline.
+- **Data Update**: Type `nupdate` and enter to update your local data for offline searches. I suggest to do that firstly when you download this workflow.
+
 - If you hit enter on the outputed page it will open either in browser or in Notion app.
   
   ![screenshot](images/screenshot1.png)
-
-## To-do
-
-- [x] Convert emoji to image so it can be used as an icon.
-- [ ] Add offline version, so the workflow will be even faster. The workflow will store the data of all pages to JSON file.
-  - [ ] Add update functionally to offline version (JSON file will be updated with latest pages of your Notion workspace whenever you wish).
