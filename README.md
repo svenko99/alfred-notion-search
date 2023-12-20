@@ -26,7 +26,7 @@
 
 5. You are good to go. 😃
 
-## Usage
+## 🔄 Usage
 
 - **Online Search**: Type `n` followed by your search query to search your Notion pages online.
 - **Offline Search**: Type `ns` followed by your search query to search your Notion pages offline.
