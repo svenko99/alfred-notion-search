@@ -31,7 +31,5 @@
 - **Online Search**: Type `n` followed by your search query to search your Notion pages online.
 - **Offline Search**: Type `ns` followed by your search query to search your Notion pages offline.
 - **Data Update**: Type `nupdate` and enter to update your local data for offline searches. I suggest to do that firstly when you download this workflow.
-
-- If you hit enter on the outputed page it will open either in browser or in Notion app.
   
   ![screenshot](images/screenshot1.png)
