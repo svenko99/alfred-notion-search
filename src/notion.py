@@ -71,7 +71,7 @@ def download_image(url: str) -> str:
 
 def extract_title(result: dict) -> str:
     if result["parent"]["type"] == "database_id":
-        get_name = result["properties"]["Name"]["title"]
+        get_name = result["properties"]["\ufeffName"]["title"]  # \ufeff has to be there
         if get_name:
             return get_name[0]["plain_text"]
         else:
