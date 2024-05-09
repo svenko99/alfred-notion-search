@@ -1,10 +1,8 @@
 # <img src="images/notionxalfred.png" width="64"> Notion Search Workflow for Alfred
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ## 🤔 What is it?
 
-- This workflow enables you to perform online and offline searches of your Notion pages.
+- This Alfred workflow enables you to perform online and offline searches of your Notion pages.
 - It requires a Notion integration (API key).
 
 ## 🌟 Features
@@ -12,6 +10,7 @@
 - **Online Search**: Search your Notion pages online for the most up-to-date information.
 - **Offline Search**: Search through a locally stored copy of your pages for quick access.
 - **Data Update**: Update your local data at your convenience to ensure accurate offline searches of your pages.
+- **Opening Page in New Tab**: Open the selected page in a new tab in Notion app.
 
 ## 🚀 Getting Started
 
@@ -23,13 +22,14 @@
 
 3. Navigate to the Notion page you want to make searchable. Click the three dots in the upper right corner, select `Add connections`, and choose the integration you just created. _(This step is only necessary for main pages on the left side of Notion, as subpages inherit the connection. Refer to [clearer instructions](https://developers.notion.com/docs/create-a-notion-integration#give-your-integration-page-permissions).)_
 
-5. Now the setup is complete and the workflow should work. I recommend running the data update `nupdate` first to ensure offline search functionality.
+4. Now the setup is complete and the workflow should work. I recommend running the data update `nupdate` first to ensure offline search functionality.
 
 ## 🔄 Usage
 
-- **Online Search**: Type `n` followed by your search query to search your Notion pages online.
-- **Offline Search**: Type `ns` followed by your search query to search your Notion pages offline.
+- **Online Search**: Type `n` followed by your search query to search your Notion pages online (If you press ⇧ + ⏎ it will open the page in a new tab in the Notion app).
+- **Offline Search**: Type `ns` followed by your search query to search your Notion pages offline (If you press ⇧ + ⏎ it will open the page in a new tab in the Notion app).
 - **Data Update**: Type `nupdate` and enter to update your local data for offline searches. I suggest to do that firstly when you download the workflow.
+
   - ⚠️ **Note**: Running `nupdate` for the first time, especially with the option `Enable custom images` checked, may take some time, particularly if you have a large number of custom images.
-  
+
   ![screenshot](images/screenshot1.png)
