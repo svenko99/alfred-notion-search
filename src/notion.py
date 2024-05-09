@@ -111,6 +111,11 @@ def create_item(result: dict) -> dict:
 
 def parse_notion_data(data: dict) -> str:
     items = [create_item(result) for result in data]
+
+    # Sort the results so the first result are those that don't have 📄.png in the result["icon"]["path"]
+    # This is done because the results with 📄.png are usually less relevant
+    items.sort(key=lambda item: item["icon"]["path"].endswith("📄.png"))
+
     return dumps({"items": items})
 
 
