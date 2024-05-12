@@ -12,17 +12,26 @@
 - **Data Update**: Update your local data at your convenience to ensure accurate offline searches of your pages.
 - **Opening Page in a New Tab**: Open the selected page in a new tab in Notion app.
 
-## 🚀 Getting Started
-
-### Installation
+## 🚀 Installation
 
 1. Install [⤓ Notion Search Workflow](https://github.com/svenko99/alfred-notion/releases/latest/download/Notion.search.alfredworkflow) in the repo. Double click on it and Alfred app should open with installation of the workflow. You will be prompted to put `Notion API key (of the integration)`. Follow steps in `2.` to get the API key.
 
-2. Follow this [instructions](https://www.notion.so/help/create-integrations-with-the-notion-api#create-an-internal-integration) to create an internal integration and put the `Internal Integration Token` into the `Notion API key (of the integration)` which you will find in the `Configure Workflow...` in Alfred app. There you will also find a checkbox if you wish that links of the pages are opened in the browser or in the Notion app.
+2. Follow this [instructions](https://www.notion.so/help/create-integrations-with-the-notion-api#create-an-internal-integration) to create an internal integration and put the `Internal Integration Token` into the `Notion API key (of the integration)`.
 
-3. Navigate to the Notion page you want to make searchable. Click the three dots in the upper right corner, select `Add connections`, and choose the integration you just created. _(This step is only necessary for main pages on the left side of Notion, as subpages inherit the connection. Refer to [clearer instructions](https://developers.notion.com/docs/create-a-notion-integration#give-your-integration-page-permissions).)_
+3. Follow this [instructions](https://developers.notion.com/docs/create-a-notion-integration#give-your-integration-page-permissions) to give your integration premission to search for pages. You only need to give premission to the main pages on the left side of Notion, as subpages inherit the premission.
 
 4. Now the setup is complete and the workflow should work. I recommend running the data update `nupdate` first to ensure offline search functionality.
+
+## 🔧 Workflow variables
+
+
+
+|Variable   |Type   |Description   |
+|---|---|---|
+|Notion API key (of the integration)|Text Field   |This is a text field where you input the API key required for the integration with Notion. (e.g. secret_WmzOfHiLeipQKPiRd5GsdVlwXXcgP3I44GdoreruIV)    |
+|Use desktop client|Checkbox   |A checkbox indicating whether to open links in the desktop client or in the browser    |
+|Enable custom images   | Checkbox   |A checkbox to enable or disable the downloading of custom Noiton page icon images|
+
 
 ## 🔄 Usage
 
