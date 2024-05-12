@@ -29,8 +29,8 @@
 |Variable   |Type   |Description   |
 |---|---|---|
 |Notion API key (of the integration)|Text Field   |This is a text field where you input the API key required for the integration with Notion. (e.g. secret_WmzOfHiLeipQKPiRd5GsdVlwXXcgP3I44GdoreruIV)    |
-|Use desktop client|Checkbox   |A checkbox indicating whether to open links in the desktop client or in the browser    |
-|Enable custom images   | Checkbox   |A checkbox to enable or disable the downloading of custom Noiton page icon images|
+|Use desktop client|Checkbox   |A checkbox indicating whether to open links in the desktop client or in the browser.    |
+|Enable custom images   | Checkbox   |A checkbox to enable or disable the downloading of custom Noiton page icon images.|
 
 
 ## 🔄 Usage
