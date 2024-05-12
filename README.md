@@ -1,6 +1,6 @@
 # <img src="images/notionxalfred.png" width="64"> Notion Search Workflow for Alfred
 
-## 🤔 What is it?
+## 🤔 Introduction
 
 - This Alfred workflow enables you to perform online and offline searches of your Notion pages.
 - It requires a Notion integration (API key).
