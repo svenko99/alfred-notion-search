@@ -10,7 +10,7 @@
 - **Online Search**: Search your Notion pages online for the most up-to-date information.
 - **Offline Search**: Search through a locally stored copy of your pages for quick access.
 - **Data Update**: Update your local data at your convenience to ensure accurate offline searches of your pages.
-- **Opening Page in a New Tab**: Open the selected page in a new tab in Notion app.
+- **Opening Page in a New Tab**: Open the selected page in a new tab in the Notion app.
 
 ## 🚀 Installation
 
