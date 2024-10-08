@@ -2,7 +2,7 @@
 
 ## 🤔 Introduction
 
-- This Alfred workflow enables you to perform online and offline searches of your Notion pages.
+- This [Alfred](https://www.alfredapp.com/) workflow enables you to perform online and offline searches of your Notion pages.
 - It requires a Notion integration (API key).
 
 ## 🌟 Features
