@@ -40,6 +40,6 @@
 - **Data Update**: Type `nupdate` and enter to update your local data for offline searches. I suggest to do that firstly when you download the workflow.
 
   - ⚠️ **Note**: Running `nupdate` for the first time, especially with the option `Enable custom images` checked, may take some time, particularly if you have a large number of custom images.
-  - ⚠️ **Note**: To make sure opening a page in a new tab works, you must toggle off the setting `New Tab Search` located in `My settings` in Notion app.
+  - ⚠️ **Note**: To make sure opening a page in a new tab works, you must toggle off the setting `New Tab Search` located in `Settings → Preferences` under `Desktop app` section in Notion app.
 
   ![screenshot](images/screenshot1.png)
