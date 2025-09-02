@@ -1,0 +1,5 @@
+# Ignore emoji_icons
+src/emoji_icons/
+
+# Ignore idea files
+.idea/
