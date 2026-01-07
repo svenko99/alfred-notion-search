@@ -26,36 +26,30 @@ class AlfredItem:
 
 def extract_title(result: dict) -> str:
     try:
-        # Case 1: Page in a database
-        if result.get("parent", {}).get("type") == "database_id":
-            title_info = (
-                result.get("properties", {}).get("\ufeffName", {}).get("title", [])
-            )
-            if title_info:
-                return title_info[0].get("plain_text", "Untitled")
+        properties = result.get("properties", {})
 
-        # Case 2: Standalone page
-        if result.get("object") == "page":
-            title_info = result.get("properties", {}).get("title", {}).get("title", [])
-            if title_info:
-                return title_info[0].get("plain_text", "Untitled")
-
-        # Fallback: try direct title field
-        title_info = result.get("title", [])
-        if title_info:
-            return title_info[0].get("plain_text", "Untitled")
+        # Look for any property of type "title"
+        for prop in properties.values():
+            if prop.get("type") == "title":
+                title_fragments = prop.get("title", [])
+                if title_fragments:
+                    # Combine all fragments into a single string
+                    return "".join(frag.get("plain_text", "") for frag in title_fragments)
 
     except Exception as e:
         logging.error(f"Error extracting title: {e}")
 
+    # Return default if no title found
     return "Untitled"
 
 
 def parse_image(result: dict) -> str:
     try:
-        icon = result.get("icon", {})
-        icon_type = icon.get("type")
+        icon = result.get("icon")
+        if not icon:
+            return "emojis/📄.png"
 
+        icon_type = icon.get("type")
         if icon_type == "emoji":
             return get_emoji(icon["emoji"])
         elif icon_type in ["file", "external"]:
@@ -101,7 +95,7 @@ def parse_notion_data(
     data: list[dict], page_map: Optional[dict[str, dict]] = None
 ) -> str:
     items = [create_item(result, page_map=page_map) for result in data]
-    # Prioritiziraj rezultate z "boljšo" ikono (brez 📄.png)
+    # Prioritise results with a "better" icon (without 📄.png)
     if len(items) > 1:
         items.sort(key=lambda item: item["icon"]["path"].endswith("📄.png"))
 
