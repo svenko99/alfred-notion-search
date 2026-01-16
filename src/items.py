@@ -26,20 +26,23 @@ class AlfredItem:
 
 def extract_title(result: dict) -> str:
     try:
-        properties = result.get("properties", {})
+        # Case 1: database object
+        if result.get("object") == "database":
+            title_fragments = result.get("title", [])
+            if title_fragments:
+                return "".join(frag.get("plain_text", "") for frag in title_fragments)
 
-        # Look for any property of type "title"
+        # Case 2: page object (title stored in properties)
+        properties = result.get("properties", {})
         for prop in properties.values():
             if prop.get("type") == "title":
                 title_fragments = prop.get("title", [])
                 if title_fragments:
-                    # Combine all fragments into a single string
                     return "".join(frag.get("plain_text", "") for frag in title_fragments)
 
     except Exception as e:
         logging.error(f"Error extracting title: {e}")
 
-    # Return default if no title found
     return "Untitled"
 
 
