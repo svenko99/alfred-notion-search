@@ -1,0 +1,28 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: svenko99/alfred-build-action@v1
+        id: build
+      - name: Verify tag matches info.plist version
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          plist="${{ steps.build.outputs.version }}"
+          if [ "$tag" != "$plist" ]; then
+            echo "::error::Tag v$tag does not match info.plist version $plist"
+            exit 1
+          fi
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ steps.build.outputs.workflow-file }}
+          name: ${{ github.ref_name }}
+          generate_release_notes: true

@@ -1,5 +1,9 @@
-# Ignore emoji_icons
-src/emoji_icons/
-
-# Ignore idea files
 .idea/
+.claude/
+
+Workflow/.sync.lock
+Workflow/prefs.plist
+Workflow/emojis/
+Workflow/custom_images/*
+Workflow/page_titles.json
+Workflow/all_pages_data.json
