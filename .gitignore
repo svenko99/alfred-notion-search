@@ -3,7 +3,6 @@
 
 Workflow/.sync.lock
 Workflow/prefs.plist
-Workflow/emojis/
 Workflow/custom_images/*
 Workflow/page_titles.json
 Workflow/all_pages_data.json
