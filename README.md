@@ -47,3 +47,4 @@
 ## ✔️ To-do
 
 - [X] Adjust offline search so [Alfred filters results](https://www.alfredapp.com/help/workflows/inputs/script-filter/#alfred-filters-results) does it. There will be no need for fuzzy search. Just return all pages. Consider adding `uid` object, as it will help Alfred learn about your searches.
+- [ ] Because Alfred filters Script Filter results, the item that reminds the user of old data is not in a deterministic place. It needs to be.
